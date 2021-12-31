@@ -10,7 +10,7 @@ public class MaestroPayment extends Payment{
 
     public double calcTransactionCosts() {
         if(getCurrency().equals("DOGE")) {
-            return getAmount();
+            return 0;
         } else if ( (getAmount() * 0.75) > 0.95 ) {
             return getAmount() * 0.75;
         }
