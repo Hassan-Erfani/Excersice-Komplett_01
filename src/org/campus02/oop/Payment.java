@@ -15,22 +15,22 @@ public abstract class Payment {
         double res;
         switch (this.currency) {
             case "Doge":
-                res = this.amount * 1;
+                res = this.amount;
                 break;
             case "USDT":
-                res = this.amount * 1.10;
+                res = this.amount / 1.10;
                 break;
             case "GBP":
-                res = this.amount * 0.85;
+                res = this.amount / 0.85;
                 break;
             case "SEK":
-                res = this.amount * 9.50;
+                res = this.amount / 9.50;
                 break;
             case "HUF":
-                res = this.amount * 310;
+                res = this.amount / 310;
                 break;
             default:
-                res = this.amount * 2;
+                res = this.amount / 2;
                 break;
         }
         return res;
